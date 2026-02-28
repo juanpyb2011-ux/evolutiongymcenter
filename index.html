@@ -3,142 +3,189 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gimnasio Elite Fitness | Transforma Tu Cuerpo</title>
+<title>Evolution Gym Center</title>
 
 <style>
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #000000, #1a1a1a);
-    color: #ffffff;
-  }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #000000, #1a1a1a);
+  color: white;
+}
 
-  header {
-    text-align: center;
-    padding: 80px 20px;
-  }
+/* HEADER */
+header {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+  url('https://images.unsplash.com/photo-1554284126-aa88f22d8b74');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
-  h1 {
-    font-size: 48px;
-    color: #d4af37; /* dorado */
-    margin-bottom: 10px;
-  }
+h1 {
+  font-size: 60px;
+  background: linear-gradient(45deg, #d4af37, #ffd700, #b8860b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
 
-  p {
-    font-size: 18px;
-    color: #cccccc;
-  }
+header p {
+  font-size: 22px;
+  margin-bottom: 30px;
+  color: #ddd;
+}
 
-  .btn {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 15px 35px;
-    background: #d4af37; /* dorado */
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: 0.3s;
-  }
+/* BOTONES */
+.btn {
+  padding: 15px 40px;
+  background: linear-gradient(45deg, #d4af37, #ffd700, #b8860b);
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.4s;
+  box-shadow: 0 0 20px rgba(255,215,0,0.4);
+}
 
-  .btn:hover {
-    background: #b8962e;
-  }
+.btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 35px rgba(255,215,0,0.8);
+}
 
-  section {
-    padding: 60px 20px;
-    text-align: center;
-  }
+/* SECCIONES */
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
 
-  .card {
-    background: #111111;
-    border: 1px solid #d4af37;
-    padding: 30px;
-    margin: 20px auto;
-    max-width: 300px;
-    border-radius: 10px;
-  }
+section h2 {
+  font-size: 40px;
+  color: #ffd700;
+  margin-bottom: 40px;
+}
 
-  footer {
-    background: #000000;
-    text-align: center;
-    padding: 20px;
-    border-top: 1px solid #d4af37;
-    color: #888;
-  }
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card {
+  background: #111;
+  border: 1px solid #d4af37;
+  padding: 30px;
+  width: 280px;
+  border-radius: 15px;
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(255,215,0,0.6);
+}
+
+.card h3 {
+  color: #ffd700;
+}
+
+/* PRECIOS */
+.price {
+  font-size: 30px;
+  margin: 15px 0;
+  color: #fff;
+}
+
+/* FOOTER */
+footer {
+  background: black;
+  padding: 25px;
+  text-align: center;
+  border-top: 1px solid #d4af37;
+  color: #888;
+}
+
+/* BOTÓN FLOTANTE WHATSAPP */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 15px 18px;
+  border-radius: 50%;
+  font-size: 22px;
+  text-decoration: none;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  transition: 0.3s;
+}
+
+.whatsapp:hover {
+  transform: scale(1.1);
+}
 </style>
 </head>
 
 <body>
 
 <header>
-<h1>Elite Fitness Gym</h1>
-<p>Transforma tu cuerpo. Mejora tu salud. Alcanza tu mejor versión.</p>
-<a href="https://wa.me/522224290839?text=Hola,%20quiero%20información%20sobre%20las%20membresías%20del%20gimnasio" class="btn">Inscribirme Ahora</a>
+  <h1>EVOLUTION GYM CENTER</h1>
+  <p>Transforma tu cuerpo. Eleva tu disciplina.</p>
+  <a href="https://wa.me/5215535816396" class="btn" target="_blank">
+    Inscríbete por WhatsApp
+  </a>
 </header>
 
 <section>
-<h2>¿Qué Ofrecemos?</h2>
-<div class="cards">
-<div class="card">
-<h3>Área de Pesas</h3>
-<p>Equipos modernos para entrenamiento de fuerza.</p>
-</div>
-
-<div class="card">
-<h3>Clases Grupales</h3>
-<p>Spinning, funcional, HIIT y más.</p>
-</div>
-
-<div class="card">
-<h3>Entrenador Personal</h3>
-<p>Planes personalizados para resultados rápidos.</p>
-</div>
-</div>
+  <h2>Nuestros Servicios</h2>
+  <div class="card-container">
+    <div class="card">
+      <h3>Área de Pesas</h3>
+      <p>Equipo profesional para entrenamiento de alto rendimiento.</p>
+    </div>
+    <div class="card">
+      <h3>Clases Grupales</h3>
+      <p>Funcional, HIIT, cardio intenso y más.</p>
+    </div>
+    <div class="card">
+      <h3>Entrenamiento Personal</h3>
+      <p>Planes personalizados con seguimiento profesional.</p>
+    </div>
+  </div>
 </section>
 
 <section>
-<h2>Membresías</h2>
-<div class="pricing">
-<div class="price-box">
-<h3>Mensual</h3>
-<p>$599 MXN</p>
-<p>Acceso completo</p>
-<p>Clases incluidas</p>
-</div>
-
-<div class="price-box">
-<h3>Trimestral</h3>
-<p>$1,499 MXN</p>
-<p>Ahorra más</p>
-<p>Entrenamiento personalizado básico</p>
-</div>
-
-<div class="price-box">
-<h3>Anual</h3>
-<p>$4,999 MXN</p>
-<p>Máximo ahorro</p>
-<p>Plan nutricional incluido</p>
-</div>
-</div>
-</section>
-
-<section>
-<h2>Ubicación</h2>
-<p style="text-align:center;color:#cfcfcf;">
-Av. Principal #123, Ciudad, México<br><br>
-Horario: Lunes a Sábado 6:00 AM - 10:00 PM
-</p>
-</section>
-
-<section style="text-align:center;">
-<h2>¿Listo para comenzar?</h2>
-<a href="https://wa.me/522224290839?text=Hola,%20quiero%20inscribirme%20al%20gimnasio" class="btn">Contáctanos por WhatsApp</a>
+  <h2>Membresías</h2>
+  <div class="card-container">
+    <div class="card">
+      <h3>Mensual</h3>
+      <div class="price">$599 MXN</div>
+      <a href="https://wa.me/5215535816396" class="btn" target="_blank">Contratar</a>
+    </div>
+    <div class="card">
+      <h3>Trimestral</h3>
+      <div class="price">$1,499 MXN</div>
+      <a href="https://wa.me/5215535816396" class="btn" target="_blank">Contratar</a>
+    </div>
+    <div class="card">
+      <h3>Anual</h3>
+      <div class="price">$4,999 MXN</div>
+      <a href="https://wa.me/5215535816396" class="btn" target="_blank">Contratar</a>
+    </div>
+  </div>
 </section>
 
 <footer>
-© 2026 Elite Fitness Gym | Página web creada como propuesta por NovaGrowth
+  © 2026 Evolution Gym Center | Todos los derechos reservados
 </footer>
+
+<a href="https://wa.me/5215535816396" class="whatsapp" target="_blank">💬</a>
 
 </body>
 </html>
