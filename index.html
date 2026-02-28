@@ -25,6 +25,7 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 70px;
 }
 
 h1 {
@@ -155,10 +156,57 @@ form textarea:focus {
   outline: none;
   box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
 }
+  /* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  z-index: 999;
+  border-bottom: 1px solid #d4af37;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+  color: #ffd700;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffd700;
+}
+
+/* Espacio para que no tape el header */
+body {
+  scroll-behavior: smooth;
+}
 </style>
 </head>
 
 <body>
+  <nav class="navbar">
+  <div class="logo">EVOLUTION GYM CENTER</div>
+  <div class="nav-links">
+    <a href="#servicios">Servicios</a>
+    <a href="#membresias">Membresías</a>
+    <a href="#testimonios">Testimonios</a>
+    <a href="#horarios">Horarios</a>
+    <a href="#contacto">Contacto</a>
+    <a href="#ubicacion">Ubicación</a>
+  </div>
+</nav>
 
 <header>
   <h1>EVOLUTION GYM CENTER</h1>
@@ -169,6 +217,7 @@ form textarea:focus {
 </header>
 
 <section>
+  <section id="servicios">
   <h2>Nuestros Servicios</h2>
   <div class="card-container">
 
@@ -216,6 +265,7 @@ form textarea:focus {
 </section>
 
 <section>
+  <section id="membresias">
   <h2>Membresías</h2>
   <div class="card-container">
     <div class="card">
@@ -236,12 +286,14 @@ form textarea:focus {
   </div>
 </section>
   <section>
+  <section id="horarios">
   <h2>Horarios</h2>
   <p>Lunes a Viernes: 6:00 AM - 10:00 PM</p>
   <p>Sábado: 8:00 AM - 4:00 PM</p>
   <p>Domingo: 9:00 AM - 2:00 PM</p>
 </section>
   <section id="contacto">
+    <section id="contacto">
   <h2>Contáctanos</h2>
   <p>Déjanos tus datos y te contactamos lo antes posible.</p>
 
@@ -264,6 +316,7 @@ form textarea:focus {
   </div>
 </section>
 <section>
+  <section id="ubicacion">
   <h2>Ubicación</h2>
   <p>Visítanos y entrena con los mejores.</p>
   
