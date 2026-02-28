@@ -192,6 +192,54 @@ form textarea:focus {
 body {
   scroll-behavior: smooth;
 }
+  /* ============================= */
+/* 📱 DISEÑO RESPONSIVE CELULAR */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .nav-links {
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  header h1 {
+    font-size: 32px;
+  }
+
+  header p {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .form-container {
+    width: 90%;
+    padding: 25px;
+  }
+
+  section h2 {
+    font-size: 28px;
+  }
+
+}
 </style>
 </head>
 
