@@ -87,6 +87,26 @@ section h2 {
   transition: 0.4s;
 }
 
+/* BOTÓN DE SERVICIOS */
+.btn-servicio {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #d4af37, #ffd700, #b8860b);
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+  position: relative;
+  z-index: 2;
+}
+
+.btn-servicio:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255,215,0,0.7);
+}
+
 .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 0 25px rgba(255,215,0,0.6);
@@ -267,32 +287,50 @@ body {
   <h2>Nuestros Servicios</h2>
   <div class="card-container">
 
-    <div class="card">
-      <h3>Paquete Gym y Box</h3>
-      <p>$650 MXN </p>
-    </div>
+    <div class="card gymbox">
+  <h3>Paquete Gym y Box</h3>
+  <p>$650 MXN</p>
+  <a href="https://wa.me/5215535816396?text=Hola%20quiero%20inscribirme%20al%20paquete%20Gym%20y%20Box%20de%20$650" 
+     class="btn-servicio" target="_blank">
+     Contratar ahora
+  </a>
+</div>
 
-    <div class="card">
-      <h3>Clase muestra de Box</h3>
-      <p> Totalmente Gratis.</p>
-    </div>
-    
-    <div class="card">
-      <h3>Mensualidad Sin Inscripcion</h3>
-      <p>$500 MXN </p>
-    </div>
-    
-    <div class="card">
-      <h3>Trimestre Individual</h3>
-      <p>$1200 MXN </p>
-    </div>
-    
-    <div class="card">
-      <h3>Box-Kids</h3>
-      <p>De 5 a 9 años $350 MXN </p>
-    </div>
+<div class="card boxmuestra">
+  <h3>Clase muestra de Box</h3>
+  <p>Totalmente Gratis</p>
+  <a href="https://wa.me/5215535816396?text=Hola%20quiero%20agendar%20la%20clase%20muestra%20de%20Box" 
+     class="btn-servicio" target="_blank">
+     Reservar ahora
+  </a>
+</div>
 
-  </div>
+<div class="card mensual">
+  <h3>Mensualidad Sin Inscripción</h3>
+  <p>$500 MXN</p>
+  <a href="https://wa.me/5215535816396?text=Hola%20quiero%20inscribirme%20a%20la%20mensualidad%20de%20$500" 
+     class="btn-servicio" target="_blank">
+     Contratar ahora
+  </a>
+</div>
+
+<div class="card trimestre">
+  <h3>Trimestre Individual</h3>
+  <p>$1200 MXN</p>
+  <a href="https://wa.me/5215535816396?text=Hola%20quiero%20inscribirme%20al%20trimestre%20de%20$1200" 
+     class="btn-servicio" target="_blank">
+     Contratar ahora
+  </a>
+</div>
+
+<div class="card kids">
+  <h3>Box-Kids</h3>
+  <p>De 5 a 9 años $350 MXN</p>
+  <a href="https://wa.me/5215535816396?text=Hola%20quiero%20información%20sobre%20Box-Kids%20$350" 
+     class="btn-servicio" target="_blank">
+     Inscribir niño
+  </a>
+</div>
 </section>
 
   <section id="membresias">
